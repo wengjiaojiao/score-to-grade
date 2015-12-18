@@ -33,14 +33,12 @@ describe('score-to-grade', function() {
     expect(function() {
       scoreToGrade(100)
     }).toThrowError(TypeError);
-
   });
 
   it('shoule return "it is not a right score"', function() {
     expect(function() {
       scoreToGrade(-1)
     }).toThrowError(TypeError);
-
   });
 
   it('shoule return "please input number"', function() {
